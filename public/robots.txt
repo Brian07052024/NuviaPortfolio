@@ -42,4 +42,4 @@ Disallow: /*~
 Crawl-delay: 1
 
 # Sitemap
-Sitemap: https://brianorlandonunez.com/sitemap.xml
+Sitemap: https://nuvia-js.netlify.app/sitemap.xml

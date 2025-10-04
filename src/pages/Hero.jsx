@@ -11,7 +11,7 @@ function Hero() {
                             Nuvia.JS - Tu socio tecnologico
                         </p>
                         <div className='text-center uppercase font-bold tracking-wide animate-fade'>
-                            <h1 className='text-3xl md:text-7xl'>Todo gran proyecto<br />comienza con una idea</h1>
+                            <h1 className='text-2xl md:text-7xl'>Todo gran proyecto<br />comienza con una idea</h1>
                         </div>
                         <p className='text-xs text-center md:text-sm text-grisNode font-medium tracking-widest animate-fade-up animate-delay-300'>
                             Desarrollamos sitios web y aplicaciones que impulsan tu negocio.
