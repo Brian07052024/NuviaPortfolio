@@ -1,0 +1,45 @@
+# robots.txt para Nuvia.JS - Creación de Páginas Web
+User-agent: *
+Allow: /
+
+# Permitir acceso a recursos importantes
+Allow: /img/
+Allow: /skills/
+Allow: /svg/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.ico
+Allow: /*.woff2
+Allow: /manifest.json
+
+# Disallow acceso a archivos de configuración y directorios sensibles
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.vscode/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+Disallow: /vite.config.js
+Disallow: /tailwind.config.js
+Disallow: /eslint.config.js
+Disallow: /*.config.js
+Disallow: /*.config.ts
+
+# Prevenir acceso a archivos temporales y backups
+Disallow: /*.bak
+Disallow: /*.tmp
+Disallow: /*.old
+Disallow: /*~
+
+# Crawl delay para evitar sobrecarga
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://brianorlandonunez.com/sitemap.xml

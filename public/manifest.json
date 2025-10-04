@@ -1,0 +1,98 @@
+{
+  "name": "Nuvia.JS - Creación de Páginas Web | Diseño Web Profesional",
+  "short_name": "Nuvia.JS",
+  "description": "Nuvia.JS - Creamos páginas web profesionales para tu negocio. Diseño web moderno, tiendas online y sitios web que atraen clientes. Cotización gratis.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e293b",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["business", "design", "web", "marketing", "services"],
+  "screenshots": [
+    {
+      "src": "/img/nuviaAbout.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Nuvia.JS - Creación de páginas web profesionales"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/svg/nube.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/nuvia.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/nuvia.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nosotros",
+      "short_name": "About",
+      "description": "Conoce el equipo de Nuvia.JS",
+      "url": "/#about",
+      "icons": [
+        {
+          "src": "/svg/nube.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Servicios",
+      "short_name": "Services",
+      "description": "Páginas web y tiendas online",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "/svg/nube.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Trabajos",
+      "short_name": "Projects",
+      "description": "Páginas web que hemos creado",
+      "url": "/#projects",
+      "icons": [
+        {
+          "src": "/svg/nube.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contacto",
+      "short_name": "Contact",
+      "description": "Pide tu cotización gratis",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/svg/nube.svg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

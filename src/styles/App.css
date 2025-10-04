@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+
+@font-face{
+    font-family: "Lexend";
+    src: url("../assets/lexend.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@theme{
+  --color-negro: #FFFFFF;
+  --color-enfasis: #44883e;
+  --color-grisNode: #333333;
+
+  --color-titleTop: #37FF00;
+  --color-titleBottom: #00ED64;
+
+  --color-nonEnfasis: #858585;
+  
+  --color-cardsGradient: linear-gradient(180deg, rgba(123, 123, 123, 0.05) 0%, rgba(21, 21, 21, 0.00) 100%);
+
+  --color-strokeGradient: linear-gradient(0deg, #252525, #505050);
+
+  --color-bgMain: #F6F7F8;
+
+
+
+  --shadow-avatar: 0 0 10px 2px;
+  --drop-shadow-icons: 0 0 100px 0px;
+
+  --font-sans: "Lexend", system-ui, sans-serif;
+
+  --animate-fade-out: sacar 0.6s ease forwards;
+
+  @keyframes sacar{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      display: none;
+    }
+  }
+
+
+}
+
+.exp-cards {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.exp-cards::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1.25px; /* grosor del borde */
+  background: linear-gradient(0deg, #252525 0%, #505050 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.exp-cards > * {
+  position: relative;
+  z-index: 2;
+}
+
+.baja{
+  height: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
