@@ -32,26 +32,26 @@ function Services() {
             />
 
             <div className={`transition duration-700 ${showCards ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8 pointer-events-none'}`}>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-6 justify-items-center max-w-7xl mx-auto">
 
                     <ExperienceCard
                         plan="Intermedio"
                         title="Sitio web completo"
-                        caracteristicas={["Hasta 6–8 secciones", "Hosting incluido (mejor rendimiento)", "Integración con redes sociales y Google Maps", "Optimización SEO Intermedio", "2 rondas de cambios", "Capacitación básica para actualizar contenido"]}
-                        precio={"Desde $3,999 MXN"}
+                        caracteristicas={["Todo del plan Básico", "Hasta 7 secciones personalizadas", "Integración con Google Maps", "Formulario de contacto avanzado", "Galería de imágenes/portafolio", "Blog o sección de noticias", "2 rondas de revisiones gratuitas", "Capacitación para gestión de contenido"]}
+                        precio={"Desde $3,999"}
                     />
                     <ExperienceCard
                         plan="Básico"
                         title="Presencia Online"
-                        caracteristicas={["Página informativa", "Integración con redes sociales", "Optimización SEO Inicial (búsquedas locales)", "Hosting incluido (plan básico)", "Diseño responsivo", "Formulario de contacto/WhatsApp", "Certificado SSL/TLS", "1 ronda de cambios"]}
+                        caracteristicas={["Página informativa profesional", "Integración con redes sociales", "Dominio por 1 año", "Optimización SEO (te encontrarán fácil)", "Hosting para tu sitio", "Diseño responsivo", "Formulario de contacto/WhatsApp", "Certificado SSL/TLS", "1 ronda de revisiones gratuitas"]}
                         solicitado={true}
-                        precio={"Desde $1,999 MXN"}
+                        precio={"Desde $2,499"}
                     />
                     <ExperienceCard
                         plan="Avanzado"
                         title="E-commerce / WebApp"
-                        caracteristicas={["E-commerce o aplicación web personalizada", "Catálogo de productos/servicios (con carrito, pasarelas de pago (stripe)", "Panel de administración para el cliente", "Hosting mejorado++", "Integración con correos corporativos", "Optimización SEO avanzada", "Mejores opciones de mantenimiento", "3 rondas de cambios"]}
-                        precio={"Contactanos"}
+                        caracteristicas={["Todo de los planes anteriores", "Tienda online completa o WebApp a medida", "Sistema de carrito de compras", "Pasarelas de pago (Stripe)", "Panel de administración personalizado", "Correos corporativos profesionales (@tunegocio.com)", "SEO avanzado + Google Analytics", "Soporte técnico prioritario", "3 rondas de revisiones gratuitas"]}
+                        precio={"Contáctanos"}
                     />
                 </div>
             </div>

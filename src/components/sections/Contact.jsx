@@ -111,9 +111,9 @@ function Contact() {
             />
             <div className={`flex flex-col-reverse items-center md:items-start md:flex-row gap-10`}>
 
-                <form 
-                    action="" 
-                    className={`shadow-lg block w-full max-w-96 min-w-72 bg-white p-6 rounded-2xl transition duration-700 ${showContact ? 'opacity-100 lg:-translate-x-0 translate-y-0' : 'opacity-0 lg:-translate-x-8 translate-y-8 pointer-events-none'}`} 
+                <form
+                    action=""
+                    className={`shadow-lg block w-full max-w-96 min-w-72 bg-white p-6 rounded-2xl transition duration-700 ${showContact ? 'opacity-100 lg:-translate-x-0 translate-y-0' : 'opacity-0 lg:-translate-x-8 translate-y-8 pointer-events-none'}`}
                     onSubmit={validar}
                     role="form"
                     aria-labelledby="contact-form-title"
@@ -129,12 +129,12 @@ function Contact() {
                             <label className="font-semibold text-gray-700 text-sm" htmlFor="name">
                                 Nombre <span className="text-red-500" aria-label="obligatorio">*</span>
                             </label>
-                            <input 
-                                id="name" 
-                                name="name" 
-                                type="text" 
-                                placeholder="Tu nombre" 
-                                className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition" 
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                placeholder="Tu nombre"
+                                className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition"
                                 required
                                 aria-describedby="name-error"
                                 autoComplete="given-name"
@@ -146,12 +146,12 @@ function Contact() {
                             <label className="font-semibold text-gray-700 text-sm" htmlFor="email">
                                 Email <span className="text-red-500" aria-label="obligatorio">*</span>
                             </label>
-                            <input 
-                                id="email" 
-                                name="email" 
-                                type="email" 
-                                placeholder="tu@email.com" 
-                                className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition" 
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="tu@email.com"
+                                className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition"
                                 required
                                 aria-describedby="email-error"
                                 autoComplete="email"
@@ -163,12 +163,12 @@ function Contact() {
                             <label className="font-semibold text-gray-700 text-sm" htmlFor="phone">
                                 Teléfono <span className="text-red-500" aria-label="obligatorio">*</span>
                             </label>
-                            <input 
-                                id="phone" 
-                                name="phone" 
-                                type="tel" 
-                                placeholder="Tu número de teléfono" 
-                                className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition" 
+                            <input
+                                id="phone"
+                                name="phone"
+                                type="tel"
+                                placeholder="Tu número de teléfono"
+                                className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition"
                                 required
                                 aria-describedby="phone-error"
                                 autoComplete="tel"
@@ -180,9 +180,9 @@ function Contact() {
                             <label className="font-semibold text-gray-700 text-sm" htmlFor="service">
                                 Tipo de servicio <span className="text-red-500" aria-label="obligatorio">*</span>
                             </label>
-                            <select 
-                                id="service" 
-                                name="service" 
+                            <select
+                                id="service"
+                                name="service"
                                 className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition"
                                 required
                                 aria-describedby="service-error"
@@ -200,11 +200,11 @@ function Contact() {
                             <label className="font-semibold text-gray-700 text-sm" htmlFor="message">
                                 Mensaje <span className="text-red-500" aria-label="obligatorio">*</span>
                             </label>
-                            <textarea 
-                                id="message" 
-                                name="message" 
-                                placeholder="Cuéntanos sobre tu proyecto..." 
-                                className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition h-24 resize-none" 
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Cuéntanos sobre tu proyecto..."
+                                className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-200 transition h-24 resize-none"
                                 required
                                 aria-describedby="message-error"
                                 rows="4"
@@ -219,7 +219,7 @@ function Contact() {
                             typeBtn="submit"
                             root="/svg/mail.svg"
                             text="Enviar mensaje"
-                            colr="bg-enfasis hover:bg-green-600 text-white"
+                            colr="bg-gradient-to-r from-purple-600 to-cyan-600 text-white"
                             full={true}
                             icon={
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-at-fill" viewBox="0 0 16 16">
@@ -228,7 +228,7 @@ function Contact() {
                                 </svg>
                             }
                         />
-                        
+
                         <div className="relative">
                             <div className="flex items-center">
                                 <div className="flex-grow border-t border-gray-300"></div>
@@ -236,15 +236,15 @@ function Contact() {
                                 <div className="flex-grow border-t border-gray-300"></div>
                             </div>
                         </div>
-                        
-                        <a 
+
+                        <a
                             href="https://wa.me/+528131038748?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios%20de%20desarrollo%20web"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors"
+                            className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-colors"
                         >
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785"/>
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785" />
                             </svg>
                             Escribir por WhatsApp
                         </a>
@@ -252,10 +252,10 @@ function Contact() {
                 </form>
 
                 <div className={`flex flex-col gap-6 transition duration-700 ${showContact ? 'opacity-100 lg:translate-x-0 translate-y-0' : 'opacity-0 lg:translate-x-8 translate-y-8 pointer-events-none'}`}>
-                    <div className="bg-gradient-to-b from-slate-900 to-emerald-900 p-6 rounded-2xl shadow-lg">
+                    <div className="bg-gradient-to-r from-violet-600 to-cyan-600 p-6 rounded-2xl shadow-lg">
                         <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
                             ¿Tienes una gran
-                            <span className="bg-gradient-to-r from-slate-400 via-teal-400 to-teal-700 bg-clip-text text-transparent"> idea</span>?
+                            <span className="bg-gradient-to-r from-cyan-200 to-purple-200 bg-clip-text text-transparent"> idea</span>?
                         </h2>
                         <p className="text-white/80 text-lg md:text-xl mb-6">
                             Transformemos tu visión en una realidad digital que impulse tu negocio al siguiente nivel.
@@ -263,21 +263,27 @@ function Contact() {
 
                         <div className="space-y-4">
                             <div className="flex items-center gap-3">
-                                <svg className="w-5 h-5 text-teal-400 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
+                                <div className={`mt-0.5 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-gradient-to-br from-yellow-400 to-orange-400`}>
+                                    <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
                                 <span className="text-white/90 text-sm">Consulta gratuita para analizar tu proyecto</span>
                             </div>
                             <div className="flex items-center gap-3">
-                                <svg className="w-5 h-5 text-teal-400 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
+                                <div className={`mt-0.5 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-gradient-to-br from-yellow-400 to-orange-400`}>
+                                    <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
                                 <span className="text-white/90 text-sm">Respuesta en menos de 24 horas</span>
                             </div>
                             <div className="flex items-center gap-3">
-                                <svg className="w-5 h-5 text-teal-400 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
+                                <div className={`mt-0.5 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-gradient-to-br from-yellow-400 to-orange-400`}>
+                                    <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
                                 <span className="text-white/90 text-sm">Propuesta personalizada sin compromiso</span>
                             </div>
                         </div>
@@ -293,17 +299,17 @@ function Contact() {
                 </div>
 
             </div>
-            
+
             {/* Botón flotante de WhatsApp */}
-            <a 
+            <a
                 href="https://wa.me/+525518991234?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios%20de%20desarrollo%20web"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 animate-bounce"
+                className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-md transition-all duration-300 z-50 animate-bounce"
                 title="Escribir por WhatsApp"
             >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785"/>
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785" />
                 </svg>
             </a>
         </div>

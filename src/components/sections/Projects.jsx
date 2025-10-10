@@ -51,7 +51,10 @@ function Projects() {
             <div className={`grid mx-auto grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4`}>
                 {projects.map((project, idx) => (
                     <div idx={idx} key={project.title} className={`bg-white w-full flex flex-col gap-4 rounded-2xl overflow-hidden shadow-md transition duration-700 ${showProjects ? 'opacity-100 md:translate-y-0 translate-y-0' : 'opacity-0 md:translate-y-8 translate-y-8 pointer-events-none'}`}>
-                        <img src={project.mainImg} alt="" />
+                        <div>
+                            <img src={project.mainImg} alt="" />
+                            <div className="w-full h-1 bg-gradient-to-r from-purple-600 to-cyan-600"></div>
+                        </div>
                         <div className="p-4 flex flex-col justify-between h-full gap-4">
                             <h3 className="text-black font-bold text-2xl">{project.title}</h3>
 
@@ -69,7 +72,7 @@ function Projects() {
                                         <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                                     </svg>
                                 }
-                                colr="bg-enfasis text-white"
+                                colr="bg-gradient-to-r from-purple-600 to-cyan-600 text-white"
                             />
                         </div>
                     </div>

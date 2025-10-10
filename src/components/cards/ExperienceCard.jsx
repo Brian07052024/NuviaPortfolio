@@ -1,53 +1,97 @@
-import Btn from "../ui/Btn";
-
 function ExperienceCard({ title, plan, caracteristicas, solicitado, precio }) {
 
     return (
-        <div className={`${solicitado ? "h-[550px]" : "h-[500px]"} relative shadow-md rounded-2xl w-full p-5 flex flex-col justify-between bg-gradient-to-b from-slate-900 to-teal-900`}>
-
-            {solicitado ? (
-                <div className="absolute bg-red-500 -top-5  p-1 m-2 rounded-md animate-bounce">
-                    <p className="text-white">Más solicitado</p>
+        <div className={`relative group ${solicitado ? 'featured-card' : 'exp-cards'} w-full p-8 flex flex-col justify-between min-h-[600px] rounded-2xl transition-all duration-300 hover:-translate-y-2`}>
+            
+            {/* Badge "Más Solicitado" renovado */}
+            {solicitado && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full blur-md animate-pulse"></div>
+                        <div className="relative px-6 py-2 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 rounded-full shadow-lg">
+                            <div className="flex items-center gap-2">
+                                <svg className="w-4 h-4 text-white animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span className="text-white font-bold text-xs uppercase tracking-wider">Más Popular</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            ) : ""}
+            )}
 
-            <div className="w-full text-center">
-                <div className="text-xs w-fit mx-auto text-center text-gray-400 flex items-baseline">
-                    <span className="text-white font-bold text-base">{precio}</span>
-                    <span>/{plan}</span>
+            {/* Encabezado del plan */}
+            <div className="w-full text-center space-y-3 mb-6">
+                <div className="inline-block px-4 py-1 bg-gradient-to-r from-purple-100 to-cyan-100 rounded-full mb-2">
+                    <span className="text-xs font-semibold bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent uppercase tracking-wider">
+                        {plan}
+                    </span>
+                </div>
+                
+                <h2 className={`font-black text-3xl mb-2 ${solicitado ? 'text-white' : 'bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent'}`}>
+                    {title}
+                </h2>
+                
+                <div className={`text-sm flex flex-col items-center gap-1 ${solicitado ? 'text-white/90' : 'text-gray-600'}`}>
+                    <span className={`font-bold text-4xl ${solicitado ? 'text-white' : 'text-gray-900'}`}>
+                        {precio}<span className="text-xs">MXN</span>
+                    </span>
+                    {precio !== "Contáctanos" && <span className="text-xs opacity-70">Precio inicial</span>}
                 </div>
 
-                <h2 className="text-center font-black text-2xl bg-gradient-to-r from-slate-400 via-teal-400 to-teal-700 bg-clip-text text-transparent">{title}</h2>
-                <div className="baja w-full bg-white mt-2"></div>
+                <div className={`h-1 w-20 mx-auto rounded-full ${solicitado ? 'bg-gradient-to-r from-yellow-400 to-orange-400' : 'bg-gradient-to-r from-purple-500 to-cyan-500'}`}></div>
             </div>
 
-            <>
-                <ul className="space-y-4 text-white text-sm">
-                    {caracteristicas?.map((caracteristica, index) => (
-                        <li key={index} className="flex items-center gap-2">
-                            <svg className="w-4 h-4 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+            {/* Lista de características */}
+            <ul className="space-y-4 mb-8 flex-grow">
+                {caracteristicas?.map((caracteristica, index) => (
+                    <li key={index} className="flex items-start gap-3 group/item">
+                        <div className={`mt-0.5 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 ${
+                            solicitado 
+                            ? 'bg-gradient-to-br from-yellow-400 to-orange-400' 
+                            : 'bg-gradient-to-br from-purple-500 to-cyan-500'
+                        } group-hover/item:scale-110 transition-transform`}>
+                            <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
-                            <span>{caracteristica}</span>
-                        </li>
-                    ))}
-                </ul>
-            </>
+                        </div>
+                        <span className={`text-sm leading-relaxed ${solicitado ? 'text-white/95' : 'text-gray-700'} group-hover/item:translate-x-1 transition-transform`}>
+                            {caracteristica}
+                        </span>
+                    </li>
+                ))}
+            </ul>
 
-            <div className="justify-center flex">
-                <Btn
-
-                    text="Envianos un mensaje"
-                    link="#contact"
-                    icon={
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
-                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
-                        </svg>
-                    }
-
-                />
+            {/* Botón CTA */}
+            <div className="justify-center flex mt-auto">
+                <a 
+                    href="#contact" 
+                    className={`group/btn w-full py-4 px-6 rounded-2xl font-bold text-center transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 ${
+                        solicitado
+                        ? 'bg-white text-purple-600 hover:shadow-2xl hover:shadow-white/50'
+                        : 'bg-gradient-to-r from-violet-600 to-cyan-600 text-white hover:shadow-md hover:shadow-purple-500/50'
+                    }`}
+                >
+                    <span>Comenzar Ahora</span>
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="18" 
+                        height="18" 
+                        fill="currentColor" 
+                        className="group-hover/btn:translate-x-1 transition-transform" 
+                        viewBox="0 0 16 16"
+                    >
+                        <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                </a>
             </div>
+
+            {/* Efecto de brillo en hover */}
+            {!solicitado && (
+                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-600/10 to-cyan-600/10"></div>
+                </div>
+            )}
         </div>
     );
 }

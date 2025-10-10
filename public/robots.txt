@@ -4,7 +4,6 @@ Allow: /
 
 # Permitir acceso a recursos importantes
 Allow: /img/
-Allow: /skills/
 Allow: /svg/
 Allow: /*.css
 Allow: /*.js
