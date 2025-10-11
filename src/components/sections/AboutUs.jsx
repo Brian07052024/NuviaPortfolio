@@ -14,7 +14,10 @@ function AboutUs() {
                     observer.disconnect();
                 }
             },
-            { threshold: 0.2 }
+            { 
+                threshold: 0.2,
+                rootMargin: '50px'
+            }
         );
 
         if (aboutMeRef.current) {
