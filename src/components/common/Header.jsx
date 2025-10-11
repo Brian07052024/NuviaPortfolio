@@ -10,6 +10,8 @@ function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
+        let ticking = false;
+        
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
             const heroElement = document.querySelector("#hero");
@@ -34,11 +36,19 @@ function Header() {
                     setStickyHeader(true);
                 }
             }
+            ticking = false;
+        };
+
+        const requestTick = () => {
+            if (!ticking) {
+                window.requestAnimationFrame(handleScroll);
+                ticking = true;
+            }
         };
 
         handleScroll(); // Ejecutar al montar
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', requestTick, { passive: true });
+        return () => window.removeEventListener('scroll', requestTick);
     }, []);
 
     const toggleMobileMenu = () => {
@@ -58,7 +68,7 @@ function Header() {
                         ? 'translate-y-0 opacity-100'
                         : '-translate-y-full opacity-0'
                     } ${stickyHeader
-                        ? 'backdrop-blur-xl bg-white/70'
+                        ? 'backdrop-blur-lg bg-white/70'
                         : 'bg-transparent'
                     }`}
             >

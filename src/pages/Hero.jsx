@@ -13,7 +13,7 @@ function Hero() {
             <div className="absolute inset-0 overflow-hidden">
                 {/* <div className="absolute w-96 h-96 -top-48 -left-48 bg-purple-500/30 rounded-full blur-3xl animate-float"></div> */}
                 {/* <div className="absolute w-96 h-96 -bottom-48 -right-48 bg-cyan-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div> */}
-                <div className="absolute size-96 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-violet-500/30 rounded-full blur-3xl animate-pulse-slow"></div>
+                <div className="absolute size-96 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-violet-500/30 rounded-full blur-xl animate-pulse-slow"></div>
             </div>
 
             <div className='max-w-7xl w-full h-lvh px-6 md:px-8 relative z-20 py-32 md:py-40'>
@@ -22,7 +22,7 @@ function Hero() {
                     {/* Badge superior */}
                     <div className='animate-fade-down animate-delay-300 mb-6'>
                         <div className='rotating-border-badge inline-flex items-center gap-2 px-4 py-2 rounded-full shadow-lg'>
-                            <span className='w-2 h-2 bg-gradient-to-b from-violet-600 to-cyan-600 rounded-full animate-pulse'></span>
+                            <span className='w-2 h-2 bg-gradient-to-b from-violet-600 to-cyan-600 rounded-full'></span>
                             <p className='text-xs md:text-sm text-white/90 font-medium tracking-wide'>
                                 Nuvia.JS | Desarrollo web
                             </p>
@@ -93,7 +93,7 @@ function Hero() {
                                 desc: 'Todos los dispositivos'
                             }
                         ].map((item, idx) => (
-                            <div key={idx} className='group relative px-3 py-2 bg-white/5 backdrop-blur-3xl rounded-2xl border border-white/10 hover:bg-white/10 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-purple-500/20'>
+                            <div key={idx} className='group relative px-3 py-2 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:bg-white/10 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-purple-500/20'>
                                 <div className='mb-3'>{item.svg}</div>
                                 <h3 className='text-white font-bold text-sm mb-1'>{item.title}</h3>
                                 <p className='text-white/60 text-xs'>{item.desc}</p>

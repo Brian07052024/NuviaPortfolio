@@ -39,8 +39,8 @@ function AboutUs() {
                 <div className={`flex-1 transition-all duration-700 ${showAboutMe ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                     <div className="relative p-8 lg:p-10 bg-gradient-to-br from-white via-purple-50 to-cyan-50 rounded-3xl shadow-2xl hover-lift border border-purple-100">
                         {/* Decoración de fondo */}
-                        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-purple-400/20 to-cyan-400/20 rounded-full blur-3xl"></div>
-                        <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-cyan-400/20 to-purple-400/20 rounded-full blur-2xl"></div>
+                        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-purple-400/20 to-cyan-400/20 rounded-full blur-xl"></div>
+                        <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-cyan-400/20 to-purple-400/20 rounded-full blur-lg"></div>
                         
                         <div className="relative z-10 flex flex-col gap-5">
                             <div className="inline-flex items-center gap-2 w-fit">
