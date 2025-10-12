@@ -5,16 +5,10 @@ function Hero() {
     return (
         <div className='relative h-lvh flex justify-center items-center overflow-hidden' id='hero'>
             {/* Fondo animado con gradiente */}
-            <div className="absolute h-full w-full bg-black"><div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div></div>
+            <div class="absolute h-full w-full bg-gray-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div></div>
+            {/* Partícula flotante - centrada en el Hero */}
+            {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-96 bg-violet-500/30 rounded-full blur-xl animate-pulse-slow z-10 pointer-events-none"></div> */}
 
-            
-
-            {/* Partículas flotantes */}
-            <div className="absolute inset-0 overflow-hidden">
-                {/* <div className="absolute w-96 h-96 -top-48 -left-48 bg-purple-500/30 rounded-full blur-3xl animate-float"></div> */}
-                {/* <div className="absolute w-96 h-96 -bottom-48 -right-48 bg-cyan-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div> */}
-                <div className="absolute size-96 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-violet-500/30 rounded-full blur-xl animate-pulse-slow"></div>
-            </div>
 
             <div className='max-w-7xl w-full h-lvh px-6 md:px-8 relative z-20 py-32 md:py-40'>
                 <div className='flex flex-col justify-center items-center'>
@@ -54,7 +48,7 @@ function Hero() {
                             </svg>
                         </a>
 
-                        <a href="#contact" className='group px-6 py-3 bg-white/10 backdrop-blur-lg border-2 border-white/20 text-white rounded-full font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105 flex items-center gap-3 w-full md:w-auto justify-center'>
+                        <a href="#contact" className='group px-6 py-3 bg-white/10 border-2 border-white/20 text-white rounded-full font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105 flex items-center gap-3 w-full md:w-auto justify-center'>
                             <span>Contactar</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-arrow-right group-hover:translate-x-1 transition-transform" viewBox="0 0 16 16">
                                 <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
@@ -68,7 +62,7 @@ function Hero() {
                             {
                                 svg: (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ca8a04" className="bi bi-lightning-charge" viewBox="0 0 16 16">
-                                        <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z"/>
+                                        <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z" />
                                     </svg>
                                 ),
                                 title: 'Desarrollo Rápido',
@@ -77,7 +71,7 @@ function Hero() {
                             {
                                 svg: (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0891b2" className="bi bi-gem" viewBox="0 0 16 16">
-                                        <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
+                                        <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z" />
                                     </svg>
                                 ),
                                 title: 'Diseño Único',
@@ -86,14 +80,14 @@ function Hero() {
                             {
                                 svg: (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7c3aed" className="bi bi-grid-1x2" viewBox="0 0 16 16">
-                                        <path d="M6 1H1v14h5zm9 0h-5v5h5zm0 9v5h-5v-5zM0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm1 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1z"/>
+                                        <path d="M6 1H1v14h5zm9 0h-5v5h5zm0 9v5h-5v-5zM0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm1 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1z" />
                                     </svg>
                                 ),
                                 title: 'Responsive',
                                 desc: 'Todos los dispositivos'
                             }
                         ].map((item, idx) => (
-                            <div key={idx} className='group relative px-3 py-2 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:bg-white/10 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-purple-500/20'>
+                            <div key={idx} className='group relative px-3 py-2 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-purple-500/20'>
                                 <div className='mb-3'>{item.svg}</div>
                                 <h3 className='text-white font-bold text-sm mb-1'>{item.title}</h3>
                                 <p className='text-white/60 text-xs'>{item.desc}</p>

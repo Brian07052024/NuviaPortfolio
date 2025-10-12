@@ -116,7 +116,7 @@ function Contact() {
 
                 <form
                     action=""
-                    className={`shadow-lg block w-full max-w-96 min-w-72 bg-white p-6 rounded-2xl transition duration-700 ${showContact ? 'opacity-100 lg:-translate-x-0 translate-y-0' : 'opacity-0 lg:-translate-x-8 translate-y-8 pointer-events-none'}`}
+                    className={`shadow-lg block w-full max-w-96 min-w-72 bg-white p-6 rounded-2xl md:transition md:duration-700 ${showContact ? 'md:opacity-100 md:-translate-x-0' : 'md:opacity-0 md:-translate-x-8 md:pointer-events-none'}`}
                     onSubmit={validar}
                     role="form"
                     aria-labelledby="contact-form-title"
@@ -254,7 +254,7 @@ function Contact() {
                     </div>
                 </form>
 
-                <div className={`flex flex-col gap-6 transition duration-700 ${showContact ? 'opacity-100 lg:translate-x-0 translate-y-0' : 'opacity-0 lg:translate-x-8 translate-y-8 pointer-events-none'}`}>
+                <div className={`flex flex-col gap-6 md:transition md:duration-700 ${showContact ? 'md:opacity-100 md:translate-x-0' : 'md:opacity-0 md:translate-x-8 md:pointer-events-none'}`}>
                     <div className="bg-gradient-to-r from-violet-600 to-cyan-600 p-6 rounded-2xl shadow-lg">
                         <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
                             ¿Tienes una gran
@@ -292,7 +292,7 @@ function Contact() {
                         </div>
                     </div>
 
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-4 rounded-xl">
+                    <div className="bg-white/10 border border-white/20 p-4 rounded-xl">
                         <p className="text-slate-600 text-sm text-center">
                             💡 <strong>¿Necesitas ayuda?</strong> Escríbenos por WhatsApp para una respuesta más rápida
                         </p>

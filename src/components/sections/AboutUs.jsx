@@ -36,7 +36,7 @@ function AboutUs() {
 
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center" ref={aboutMeRef}>
                 {/* Tarjeta de contenido principal */}
-                <div className={`flex-1 transition-all duration-700 ${showAboutMe ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                <div className={`flex-1 md:transition-all md:duration-700 ${showAboutMe ? 'md:opacity-100 md:translate-x-0' : 'md:opacity-0 md:-translate-x-8'}`}>
                     <div className="relative p-8 lg:p-10 bg-gradient-to-br from-white via-purple-50 to-cyan-50 rounded-3xl shadow-2xl hover-lift border border-purple-100">
                         {/* Decoración de fondo */}
                         <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-purple-400/20 to-cyan-400/20 rounded-full blur-xl"></div>
@@ -108,7 +108,7 @@ function AboutUs() {
                 </div>
 
                 {/* Imagen con efectos */}
-                <div className={`lg:w-5/12 transition-all duration-700 ${showAboutMe ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                <div className={`lg:w-5/12 md:transition-all md:duration-700 ${showAboutMe ? 'md:opacity-100 md:translate-x-0' : 'md:opacity-0 md:translate-x-8'}`}>
                     <div className="relative group">
                         {/* Efecto de brillo de fondo */}
                         <div className="absolute -inset-4 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>

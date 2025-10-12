@@ -34,7 +34,7 @@ function Services() {
                 h2Text={"Lo que ofrecemos"}
             />
 
-            <div className={`transition duration-700 ${showCards ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8 pointer-events-none'}`}>
+            <div className={`md:transition md:duration-700 ${showCards ? 'md:opacity-100 md:translate-y-0' : 'md:opacity-0 md:translate-y-8 md:pointer-events-none'}`}>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-6 justify-items-center max-w-7xl mx-auto">
 
                     <ExperienceCard

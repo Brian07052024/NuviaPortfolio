@@ -53,7 +53,7 @@ function Projects() {
 
             <div className={`grid mx-auto grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4`}>
                 {projects.map((project, idx) => (
-                    <div idx={idx} key={project.title} className={`bg-white w-full flex flex-col gap-4 rounded-2xl overflow-hidden shadow-md transition duration-700 ${showProjects ? 'opacity-100 md:translate-y-0 translate-y-0' : 'opacity-0 md:translate-y-8 translate-y-8 pointer-events-none'}`}>
+                    <div idx={idx} key={project.title} className={`bg-white w-full flex flex-col gap-4 rounded-2xl overflow-hidden shadow-md md:transition md:duration-700 ${showProjects ? 'md:opacity-100 md:translate-y-0' : 'md:opacity-0 md:translate-y-8 md:pointer-events-none'}`}>
                         <div>
                             <img src={project.mainImg} alt="" />
                             <div className="w-full h-1 bg-gradient-to-r from-purple-600 to-cyan-600"></div>

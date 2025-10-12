@@ -68,7 +68,7 @@ function Header() {
                         ? 'translate-y-0 opacity-100'
                         : '-translate-y-full opacity-0'
                     } ${stickyHeader
-                        ? 'backdrop-blur-lg bg-white/70'
+                        ? 'backdrop-blur-sm bg-white/70'
                         : 'bg-transparent'
                     }`}
             >
@@ -125,7 +125,7 @@ function Header() {
             {/* Menú móvil - Fuera del header para evitar overflow issues */}
             <div
                 id="mobile-menu"
-                className={`${stickyHeader ? "bg-white/70" : "bg-white/5"} md:hidden fixed top-14 left-0 w-full backdrop-blur-md shadow-lg transition-all duration-300 ease-in-out z-40 ${isMobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
+                className={`${stickyHeader ? "bg-white/70" : "bg-white/5"} md:hidden fixed top-14 left-0 w-full backdrop-blur-sm shadow-lg transition-all duration-300 ease-in-out z-40 ${isMobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
                 aria-hidden={!isMobileMenuOpen}
             >
                     <nav className="py-4" role="navigation" aria-label="Navegación móvil">
