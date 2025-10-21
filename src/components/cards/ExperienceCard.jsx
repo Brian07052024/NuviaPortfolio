@@ -1,7 +1,7 @@
-function ExperienceCard({ title, plan, caracteristicas, solicitado, precio }) {
+function ExperienceCard({ title, plan, caracteristicas, solicitado, precio, className = '' }) {
 
     return (
-        <div className={`relative group ${solicitado ? 'featured-card' : 'exp-cards'} w-full p-8 flex flex-col justify-between min-h-[600px] rounded-2xl transition-all duration-300 hover:-translate-y-2`}>
+        <div className={`relative group ${solicitado ? 'bg-gradient-to-br from-cyan-600 to bg-purple-600' : 'border-2 border-purple-600'} w-full p-8 flex flex-col justify-between min-h-[600px] rounded-2xl transition-all duration-300 hover:-translate-y-2 ${className}`}>
             
             {/* Badge "Más Solicitado" renovado */}
             {solicitado && (

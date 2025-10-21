@@ -1,32 +1,13 @@
-import { useRef, useEffect, useState } from "react";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import TitleSection from "../common/TitleSection";
 import Btn from "../ui/Btn";
 import { sendContactEmail } from "../../services/emailService";
 
 function Contact() {
-    const contactRef = useRef(null);
-    const [showContact, setShowContact] = useState(false);
-
-    useEffect(() => {
-        const observer = new window.IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setShowContact(true);
-                    observer.disconnect();
-                }
-            },
-            { 
-                threshold: 0.2,
-                rootMargin: '50px'
-            }
-        );
-
-        if (contactRef.current) {
-            observer.observe(contactRef.current);
-        }
-
-        return () => observer.disconnect();
-    }, []);
+    const [contactRef, showContact] = useIntersectionObserver({
+        threshold: 0.15,
+        rootMargin: '0px'
+    });
 
     function validar(e) {
         e.preventDefault();

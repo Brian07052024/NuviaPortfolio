@@ -45,7 +45,6 @@ module.exports = {
         'float': 'float 6s ease-in-out infinite',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'gradient': 'gradient 8s linear infinite',
-        'shimmer': 'shimmer 2s linear infinite',
       },
       keyframes: {
         float: {
@@ -55,10 +54,6 @@ module.exports = {
         gradient: {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
-        },
-        shimmer: {
-          '0%': { backgroundPosition: '-1000px 0' },
-          '100%': { backgroundPosition: '1000px 0' },
         },
       },
     },

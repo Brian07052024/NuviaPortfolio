@@ -76,7 +76,7 @@ function Header() {
                 <div className="w-full max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
                     {/* Logo */}
                     <div className="flex gap-3 items-center group ">
-                        <a href="/" aria-label="Ir a inicio" className="flex items-center gap-3">
+                        <a href="#hero" aria-label="Ir a inicio" className="flex items-center gap-3">
                             <div className="relative">
                                 <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-full blur-md opacity-0 group-hover:opacity-70 transition-opacity"></div>
                                 <img id="avatar" src="/img/logosf.webp" alt="Logo de Nuvia.JS" className="relative cursor-pointer size-11 object-contain group-hover:scale-110 transition-transform" />

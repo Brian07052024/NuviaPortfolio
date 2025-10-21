@@ -1,31 +1,12 @@
-import { useRef, useEffect, useState } from "react";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import TitleSection from "../common/TitleSection";
 import Btn from "../ui/Btn";
 
 function Projects() {
-    const projectRef = useRef(null);
-    const [showProjects, setShowProjects] = useState(false);
-
-    useEffect(() => {
-        const observer = new window.IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setShowProjects(true);
-                    observer.disconnect();
-                }
-            },
-            { 
-                threshold: 0.2,
-                rootMargin: '50px'
-            }
-        );
-
-        if (projectRef.current) {
-            observer.observe(projectRef.current);
-        }
-
-        return () => observer.disconnect();
-    }, []);
+    const [projectRef, showProjects] = useIntersectionObserver({
+        threshold: 0.15,
+        rootMargin: '0px'
+    });
 
     const projects = [
         {
@@ -40,7 +21,7 @@ function Projects() {
             title: "CleanSkin Shop",
             description: "E-commerce especializado en productos de skincare y maquillaje. Cuenta con carrito, whishlist, perfiles, usuarios, filtros, busqueda personalizada, sistema CRUD, etc. Tambien cuenta con un panel de administración profesional para revisar todo lo del sitio.",
             link: "#",
-            text: "En proceso de subida..."
+            text: "En proceso de deploy..."
         }
     ];
 
@@ -55,7 +36,12 @@ function Projects() {
                 {projects.map((project, idx) => (
                     <div idx={idx} key={project.title} className={`bg-white w-full flex flex-col gap-4 rounded-2xl overflow-hidden shadow-md md:transition md:duration-700 ${showProjects ? 'md:opacity-100 md:translate-y-0' : 'md:opacity-0 md:translate-y-8 md:pointer-events-none'}`}>
                         <div>
-                            <img src={project.mainImg} alt="" />
+                            <a href={project.link}>
+                                <img 
+                                    src={project.mainImg} 
+                                    alt={project.title}
+                                />
+                            </a>
                             <div className="w-full h-1 bg-gradient-to-r from-purple-600 to-cyan-600"></div>
                         </div>
                         <div className="p-4 flex flex-col justify-between h-full gap-4">
