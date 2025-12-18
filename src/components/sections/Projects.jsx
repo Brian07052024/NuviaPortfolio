@@ -17,11 +17,25 @@ function Projects() {
             text: "Ver proyecto"
         },
         {
+            mainImg: "/img/bt.webp",
+            title: "BT Fitness",
+            description: "Sitio web corporativo para un gimnasio. La página presenta de forma clara sus servicios, enfoque en el bienestar físico y una imagen moderna orientada a atraer nuevos clientes, funcionando como un punto de contacto digital para información y promoción del gimnasio.",
+            link: "https://btfitness.com.mx/",
+            text: "Ver proyecto"
+        },
+        {
+            mainImg: "/img/pt.webp",
+            title: "Pleasure travel",
+            description: "Sitio web para una agencia de viajes, en la que se le invita al usuario a explorar los servicios de turismo que ofrecen, con un diseño moderno y atractivo.",
+            link: "https://ptravel.com",
+            text: "En proceso..."
+        },
+        {
             mainImg: "/img/Project2.webp",
             title: "CleanSkin Shop",
             description: "E-commerce especializado en productos de skincare y maquillaje. Cuenta con carrito, whishlist, perfiles, usuarios, filtros, busqueda personalizada, sistema CRUD, etc. Tambien cuenta con un panel de administración profesional para revisar todo lo del sitio.",
-            link: "#",
-            text: "En proceso de deploy..."
+            link: "https://youtu.be/LaZtqI_8slI",
+            text: "Ver demo"
         }
     ];
 

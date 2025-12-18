@@ -22,7 +22,8 @@ function Services() {
                         plan="Intermedio"
                         title="Sitio web completo"
                         caracteristicas={["Todo del plan Básico", "Hasta 7 secciones personalizadas", "Integración con Google Maps", "Formulario de contacto avanzado", "Galería de imágenes/portafolio", "Blog o sección de noticias", "2 rondas de revisiones gratuitas", "Capacitación para gestión de contenido"]}
-                        precio={"Desde $4,499"}
+                        precio={"Desde $3,599"}
+                        precioOriginal={"Desde $4,499"}
                         className="order-2 lg:order-1"
                     />
                     <ExperienceCard
@@ -30,7 +31,8 @@ function Services() {
                         title="Presencia Online"
                         caracteristicas={["Página informativa profesional", "Integración con redes sociales", "Dominio por 1 año", "Optimización SEO (te encontrarán fácil)", "Hosting para tu sitio", "Diseño responsivo", "Formulario de contacto/WhatsApp", "Certificado SSL/TLS", "1 ronda de revisiones gratuitas"]}
                         solicitado={true}
-                        precio={"Desde $2,499"}
+                        precio={"Desde $1,999"}
+                        precioOriginal={"Desde $2,499"}
                         className="order-1 lg:order-2"
                     />
                     <ExperienceCard

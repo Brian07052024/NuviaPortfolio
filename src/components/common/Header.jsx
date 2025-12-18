@@ -68,7 +68,7 @@ function Header() {
                         ? 'translate-y-0 opacity-100'
                         : '-translate-y-full opacity-0'
                     } ${stickyHeader
-                        ? 'backdrop-blur-sm bg-white/70'
+                        ? 'bg-white'
                         : 'bg-transparent'
                     }`}
             >
@@ -78,7 +78,7 @@ function Header() {
                     <div className="flex gap-3 items-center group ">
                         <a href="#hero" aria-label="Ir a inicio" className="flex items-center gap-3">
                             <div className="relative">
-                                <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-full blur-md opacity-0 group-hover:opacity-70 transition-opacity"></div>
+                                <div className="absolute inset-0 bg-gradient-to-r from-violet-600/40 to-cyan-600/40 rounded-full opacity-0 group-hover:opacity-70 transition-opacity"></div>
                                 <img id="avatar" src="/img/logosf.webp" alt="Logo de Nuvia.JS" className="relative cursor-pointer size-11 object-contain group-hover:scale-110 transition-transform" />
                             </div>
                             <div className="flex flex-col">
@@ -125,11 +125,11 @@ function Header() {
             {/* Menú móvil - Fuera del header para evitar overflow issues */}
             <div
                 id="mobile-menu"
-                className={`${stickyHeader ? "bg-white/70" : "bg-white/5"} md:hidden fixed top-14 left-0 w-full backdrop-blur-sm shadow-lg transition-all duration-300 ease-in-out z-40 ${isMobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
+                className={`${stickyHeader ? "bg-white" : "bg-transparent"} md:hidden fixed top-14 left-0 w-full bg-white shadow-lg transition-all duration-300 ease-in-out z-40 ${isMobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
                 aria-hidden={!isMobileMenuOpen}
             >
                     <nav className="py-4" role="navigation" aria-label="Navegación móvil">
-                        <ul className={`${stickyHeader ? "text-black" : "text-white"} flex flex-col space-y-2`} role="list">
+                        <ul className="flex flex-col space-y-2" role="list">
                             <li role="listitem">
                                 <a
                                     href="#about-me"

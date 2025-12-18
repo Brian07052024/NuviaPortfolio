@@ -19,12 +19,11 @@ function AboutUs() {
                 <div className={`flex-1 md:transition-all md:duration-700 ${showAboutMe ? 'md:opacity-100 md:translate-x-0' : 'md:opacity-0 md:-translate-x-8'}`}>
                     <div className="relative p-8 lg:p-10 bg-gradient-to-br from-white via-purple-50 to-cyan-50 rounded-3xl shadow-2xl border border-purple-100">
                         {/* Decoración de fondo */}
-                        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-purple-400/20 to-cyan-400/20 rounded-full blur-xl"></div>
-                        <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-cyan-400/20 to-purple-400/20 rounded-full blur-lg"></div>
+                        
                         
                         <div className="relative z-10 flex flex-col gap-5">
                             <div className="inline-flex items-center gap-2 w-fit">
-                                <div className="w-1 h-8 bg-gradient-to-b from-purple-600 to-cyan-500 rounded-full"></div>
+                                
                                 <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 via-violet-600 to-cyan-600 bg-clip-text text-transparent">
                                     Nuvia.JS
                                 </h3>
@@ -71,7 +70,7 @@ function AboutUs() {
                             </div>
 
                             <div className="mt-4 p-5 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-2xl text-white">
-                                <p className="font-bold text-lg mb-2">✨ Todo con precios competitivos</p>
+                                <p className="font-bold text-lg mb-2">Todo con precios competitivos</p>
                                 <p className="text-sm text-white/90">
                                     Hosting profesional incluido. Tu negocio listo desde el primer día.
                                 </p>
@@ -91,7 +90,7 @@ function AboutUs() {
                 <div className={`lg:w-5/12 md:transition-all md:duration-700 ${showAboutMe ? 'md:opacity-100 md:translate-x-0' : 'md:opacity-0 md:translate-x-8'}`}>
                     <div className="relative group">
                         {/* Efecto de brillo de fondo */}
-                        <div className="absolute -inset-4 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                        <div className="absolute -inset-4 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-3xl blur-md opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
                         
                         {/* Contenedor de imagen */}
                         <div className="relative overflow-hidden rounded-3xl shadow-2xl">
