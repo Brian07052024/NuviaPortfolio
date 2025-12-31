@@ -37,7 +37,7 @@ function Services() {
                     />
                     <ExperienceCard
                         plan="Avanzado"
-                        title="E-commerce / WebApp"
+                        title="E-commerce / enterprise"
                         caracteristicas={["Todo de los planes anteriores", "Tienda online completa o WebApp a medida", "Sistema de carrito de compras", "Pasarelas de pago (Stripe)", "Panel de administración personalizado", "Correos corporativos profesionales (@tunegocio.com)", "SEO avanzado + Google Analytics", "Soporte técnico prioritario", "3 rondas de revisiones gratuitas"]}
                         precio={"Contáctanos"}
                         className="order-3"

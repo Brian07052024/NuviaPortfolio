@@ -1,4 +1,3 @@
-import Btn from '../components/ui/Btn'
 
 function Hero() {
 
@@ -13,6 +12,13 @@ function Hero() {
             <div className='max-w-7xl w-full h-lvh px-6 md:px-8 relative z-20 py-32 md:py-40'>
                 <div className='flex flex-col justify-center items-center'>
 
+                    <div className="relative animate-jump mb-2 w-max px-6 py-2 bg-gradient-to-r from-red-600 via-red-700 to-red-800 rounded-full shadow-lg">
+                        <div className="flex items-center gap-2">
+                            
+                            <span className="text-white font-bold text-xs uppercase tracking-wider">!20% OFF!</span>
+                        </div>
+                    </div>
+
                     {/* Badge superior */}
                     <div className='animate-fade-down animate-delay-300 mb-6'>
                         <div className='rotating-border-badge inline-flex items-center gap-2 px-4 py-2 rounded-full shadow-lg'>
@@ -22,6 +28,7 @@ function Hero() {
                             </p>
                         </div>
                     </div>
+
 
                     {/* Título principal */}
                     <div className='text-center flex flex-col gap-4 md:gap-6 items-center justify-center w-full animate-fade animate-delay-100'>

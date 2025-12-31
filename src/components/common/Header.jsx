@@ -61,7 +61,7 @@ function Header() {
 
     return (
         <>
-
+            
             <header
                 id="header"
                 className={`fixed top-0 left-0 w-full flex justify-center items-center z-50 transition-all duration-500 ${showHeader
@@ -73,7 +73,9 @@ function Header() {
                     }`}
             >
                 
+                
                 <div className="w-full max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+                    
                     {/* Logo */}
                     <div className="flex gap-3 items-center group ">
                         <a href="#hero" aria-label="Ir a inicio" className="flex items-center gap-3">

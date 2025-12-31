@@ -14,7 +14,8 @@ function Projects() {
             title: "Carpinteria Ramirez",
             description: "Desarrollo del sitio web para Carpintería Ramírez, empresa con más de 40 años de experiencia en muebles a la medida. Implementación de sistema de citas integrado para agendamiento de visitas técnicas y panel de administración profesional.",
             link: "https://carpinteriaramirez.com",
-            text: "Ver proyecto"
+            text: "Ver proyecto",
+            
         },
         {
             mainImg: "/img/bt.webp",
@@ -24,11 +25,18 @@ function Projects() {
             text: "Ver proyecto"
         },
         {
-            mainImg: "/img/pt.webp",
-            title: "Pleasure travel",
-            description: "Sitio web para una agencia de viajes, en la que se le invita al usuario a explorar los servicios de turismo que ofrecen, con un diseño moderno y atractivo.",
-            link: "https://ptravel.com",
-            text: "En proceso..."
+            mainImg: "/img/nt.webp",
+            title: "App Gradients",
+            description: "Aplicación web para diseñadores y programadores, capaz de crear asombrosos gradientes estáticos y animados, exportarlos fácilmente y extraer su código listo para usar en proyectos web.",
+            link: "https://nuvia-tools-gradients-download.netlify.app/",
+            text: "Ver proyecto"
+        },
+        {
+            mainImg: "/img/my.webp",
+            title: "Taller Mecánico “Yeremy”",
+            description: "Sitio web claro y conciso para taller automotriz en Nuevo León, con más de 15 años de experiencia ofreciendo servicios de mantenimiento y reparación especializados, atención confiable y precios justos.",
+            link: "https://mecanicayeremy.netlify.app/",
+            text: "Ver proyecto"
         },
         {
             mainImg: "/img/Project2.webp",
@@ -36,6 +44,13 @@ function Projects() {
             description: "E-commerce especializado en productos de skincare y maquillaje. Cuenta con carrito, whishlist, perfiles, usuarios, filtros, busqueda personalizada, sistema CRUD, etc. Tambien cuenta con un panel de administración profesional para revisar todo lo del sitio.",
             link: "https://youtu.be/LaZtqI_8slI",
             text: "Ver demo"
+        },
+        {
+            mainImg: "/img/pt.webp",
+            title: "Pleasure travel",
+            description: "Sitio web para una agencia de viajes, en la que se le invita al usuario a explorar los servicios de turismo que ofrecen, con un diseño moderno y atractivo.",
+            link: "https://ptravel.com.mx/",
+            text: "En proceso..."
         }
     ];
 
@@ -47,8 +62,12 @@ function Projects() {
             />
 
             <div className={`grid mx-auto grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4`}>
+
+                {/* proyectos */}
                 {projects.map((project, idx) => (
+
                     <div idx={idx} key={project.title} className={`bg-white w-full flex flex-col gap-4 rounded-2xl overflow-hidden shadow-md md:transition md:duration-700 ${showProjects ? 'md:opacity-100 md:translate-y-0' : 'md:opacity-0 md:translate-y-8 md:pointer-events-none'}`}>
+
                         <div>
                             <a href={project.link}>
                                 <img 
@@ -58,16 +77,17 @@ function Projects() {
                             </a>
                             <div className="w-full h-1 bg-gradient-to-r from-purple-600 to-cyan-600"></div>
                         </div>
+                        
                         <div className="p-4 flex flex-col justify-between h-full gap-4">
-                            <h3 className="text-black font-bold text-2xl">{project.title}</h3>
+                            <h3 className="text-black font-bold text-2xl">{project.title}</h3> {/* Titulo del proyecto */}
 
                             <div className="flex flex-col gap-2">
                                 <p className="text-gray-500 text-sm/normal line-he">
-                                    {project.description}
+                                    {project.description}{/* descripcion del proyecto */}
                                 </p>
                             </div>
 
-                            <Btn
+                            <Btn 
                                 link={project.link}
                                 text={project.text}
                                 iconLeft={
@@ -76,10 +96,13 @@ function Projects() {
                                     </svg>
                                 }
                                 colr="bg-gradient-to-r from-purple-600 to-cyan-600 text-white"
-                            />
+                            />{/* btoton de accion ver pyto */}
+
                         </div>
                     </div>
-                ))}
+
+                ))}{/* fin proyectos */}
+                
             </div>
         </div>
     );
